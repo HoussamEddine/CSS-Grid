@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Css-Grid</title>
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> -->
   <link rel="stylesheet" href="style.css">
 
 </head>
@@ -19,7 +19,99 @@
       <div class="grid_cell"></div>
       <div class="grid_cell"></div>
     </div>
+    <div class="options_container">
+      <div class="grid_template">
+        <div class="grid_template_rows">
+          <h4>
+            Grid Template Rows :
+          </h4>
 
+          <p>
+            38vh 38vh
+          </p>
+        </div>
+        <div class="grid_template_columns">
+          <h4>
+            Grid Template Columns :
+          </h4>
+
+          <p>
+            28vw 28vw
+          </p>
+        </div>
+      </div>
+      <hr>
+      <div class="grid_gap">
+        <h4>Grid Gap: </h4>
+        <br>
+        <div class="grid_gap_container">
+          <label for="grid_row_gap">
+            <p>Row:</p>
+            <input type="number" placeholder="0" id="grid_row_gap" class="grid_row_gap">
+            <code>PX</code>
+          </label>
+          <label for="grid_column_gap">
+            <p>Column:</p>
+            <input type="number" placeholder="0" id="grid_column_gap" class="grid_column_gap">
+            <code>PX</code>
+          </label>
+        </div>
+      </div>
+      <hr>
+      <div class="items">
+        <div class="justify_items">
+          <h4>Justify Items:</h4>
+          <select name="justify_items" class="justify_items_select">
+            <option value="start">start</option>
+            <option value="end">end</option>
+            <option value="center" selected>center</option>
+            <option value="stretch">stretch(default)</option>
+          </select>
+        </div>
+        <div class="align_items">
+          <h4>Align Items:</h4>
+          <select name="align_items" class="align_items_select">
+            <option value="start">start</option>
+            <option value="end">end</option>
+            <option value="center" selected>center</option>
+            <option value="stretch">stretch(default)</option>
+          </select>
+        </div>
+      </div>
+      <hr>
+      <div class="content">
+        <div class="justify_content">
+          <h4>Justify Content:</h4>
+          <select name="justify_content" class="justify_content_select">
+            <option value="start">start</option>
+            <option value="end">end</option>
+            <option value="center" selected>center</option>
+            <option value="stretch">stretch</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+          </select>
+        </div>
+        <div class="align_content">
+          <h4>Align Content:</h4>
+          <select name="align_content" class="align_content_select">
+            <option value="start">start</option>
+            <option value="end">end</option>
+            <option value="center" selected>center</option>
+            <option value="stretch">stretch</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="grid_visualisation">
+      <div class="grid_cell_visualisation"></div>
+      <div class="grid_cell_visualisation"></div>
+      <div class="grid_cell_visualisation"></div>
+      <div class="grid_cell_visualisation"></div>
+    </div>
   </div>
 
   <script src="main.js"></script>
